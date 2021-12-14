@@ -33,3 +33,5 @@ Then execute the following commands:
 * _slippage [SLIPPAGE]_: Set the slippage for swaps to SLIPPAGE percent
 * _sell-percentage [PERCENTAGE]_: Sets the amount of *target token* to be sold to *PERCENTAGE* percent of its total amount at the time this command is executed. I.e. if you don' have the token when executing this command, the amount to be sold will remain "0" always.
 * _sell-amount [AMOUNT]_: Sets the amount to sell of *target token* to AMOUNT
+* _buy_: Perform buy transaction
+* _sell_: Perform sale transaction
