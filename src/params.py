@@ -4,10 +4,10 @@ from web3 import Web3
 
 class Params(object):
 
-    def __init__(self, web3: Web3):
+    def __init__(self, web3: Web3, private_key: str):
         self.pair_contract = web3.eth.contract()
         self.target_token_contract = web3.eth.contract()
-        self.pk = os.getenv("PRIVATE_KEY")
+        self.pk = private_key
         self.wallet = web3.eth.account.privateKeyToAccount(self.pk)
         self.token0 = ""
         self.token1 = ""
@@ -20,3 +20,5 @@ class Params(object):
         self.decimals = 18
         self.target_token = ""
         self.target_symbol = ""
+        self.sell_percentage = 100
+        self.sell_amount = 0
